@@ -29,7 +29,7 @@ public class MainController {
     @ResponseBody
     @RequestMapping(value = "/allstu")
     public AjaxResult findStu(){
-
+        System.out.println("111");
         return new AjaxResult(studentService.findAllStu());
     }
 
